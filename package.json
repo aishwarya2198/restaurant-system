@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-system",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev":   "turbo run dev",
+    "build": "turbo run build",
+    "test":  "turbo run test",
+    "lint":  "turbo run lint",
+    "db:migrate": "pnpm --filter @restaurant/database prisma migrate dev",
+    "db:studio":  "pnpm --filter @restaurant/database prisma studio"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "prettier": "^3.3.0"
+  }
+}
